@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Candleio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<!--Nav-bar-->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  	<a class="navbar-brand" href="index.html">
+				  <img id="logo" src="./images/candle-svgrepo-com.svg"/>Candleio</a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  <div class="collapse navbar-collapse" id="navbarScroll">
+			<ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Scents
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+					<li><a class="dropdown-item" href="floral.html">Floral</a></li>
+					<li><a class="dropdown-item" href="woody.html">Woody</a></li>
+					<li><a class="dropdown-item" href="fresh.html">Fresh</a></li>
+					<li><a class="dropdown-item" href="oriental.html">Oriental</a></li>
+				</ul>
+				</li>
+
+				<li class="nav-item">
+				<a class="nav-link" href="about-us.html">About Us</a>
+				</li>
+			</ul>
+
+			<!--Login icon-->
+			<a class="nav-item" id="nav-icon" href="login.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+					<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+				</svg>
+			</a>
+			<!--Login icon-->
+
+			<!--Search icon-->
+			<a class="nav-item" id="nav-icon" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				</svg>
+			</a>
+
+			<div class="collapse" id="collapseExample">
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success search-button" type="submit">Search</button>
+				</form>
+			</div>
+			<!--Search icon-->
+			
+			<!--Shopping cart icon-->
+			<a class="nav-item" id="nav-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+					<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+				</svg>
+			</a>
+
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header">
+				  	<h5 style="font-weight: 600;" id="offcanvasRightLabel">Shopping Cart</h5>
+				  	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Your selected products will be displayed here.</p>
+				</div>
+				<a id="nav-checkout" href="checkout.html">
+					<button type="button" class="btn btn-outline-dark">Proceed to Checkout</button>
+				</a>
+			</div>
+			<!--Shopping cart icon-->
+
+		  </div>
+		</div>
+	  </nav>
+</header>	
+		<!--Nav-bar-->
+
+		<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button id="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button id="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button id="carousel-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active" data-bs-interval="3000">
+		<img src="./images/carousel 1.jpg" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item" data-bs-interval="3000">
+		<img src="./images/carousel 2.jpg" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item" data-bs-interval="3000">
+		<img src="./images/carousel 3.jpg" class="d-block w-100" alt="...">
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+		<!--Carousel-->
+
+		<!--Our Story-->
+<div class="container-fluid" id="story-container">
+	<div class="container" id="our-story">
+		<h1 class="tagline">Our Story</h1>
+		<p>We are Candleio Studio. Our dreamy scents are inspired by nature and travel, moments and memories. We make our candles in our workshop using sustainable soy wax and phthalate-free perfume oils infused with essential oils. We pride ourselves on our meticulous craftsmanship, ethical production, and accessible prices.</p>
+		<a href="about-us.html"><button type="button" class="btn btn-outline-success search-button">Learn More</button></a>
+	</div>
+</div>
+		<!--Our Story-->
+
+		<!--Introduction-->
+<div class="introduction">
+	<div class="row">
+		<div class="col-sm-12 col-lg-6" id="intro-pic">
+			<img style="vertical-align:middle" src="./images/intro-1.jpg" class="d-block w-100" alt="Floral Scents">
+		</div>
+		<div class="col-sm-12 col-lg-6" id="intro-text">
+			<div>
+				<h1 id="catergory">Floral Scents</h1>
+				<p>Invoking the power of nature indoors can be very mentally healthy move, and flower power specifically might 
+				keep you chipper during the winter months. So why not give a flora-inspired candle a whirl now and see what gorgeous 
+				field of blooms you end up in?</p>
+				<a href="floral.html">SHOP THIS CANDLE</a>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-lg-6" id="intro-text">
+			<div>
+				<h1 id="catergory">Woody Scents</h1>
+				<p>From the rustic log cabins of our wilderness daydreams, to the scent of woodland strolls among crisp and 
+				colourful fallen leaves, the fragrance of wood is an integral part of the changing season and the crafting 
+				of cosiness within our homes.</p>
+				<a href="woody.html">SHOP THIS CANDLE</a>
+			</div>
+		</div>
+		<div class="col-sm-12 col-lg-6" id="intro-pic">
+			<img style="vertical-align:middle" src="./images/intro-2.png" class="d-block w-100" alt="Woody Scents">
+		</div>
+	</div>
+</div>
+		<!--Introduction-->
+
+		<!--Bestsellers-->
+<div class="container-fluid" id="product-section">
+	<div id="product-title">
+		<h3 style="font-weight: 300;">See what everyone's burning</h3>
+		<h1 class="tagline"> CHECK OUT OUR <span>BEST&#8209;SELLERS</span></h1>
+	</div>
+	
+	<div id="home-titles" class="row">
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Ocean Storm</a>
+						<p class="card-text">360.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="product.html" class="card-link text-decoration-none">58 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Cabin Fever</a>
+						<p class="card-text">300.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">52 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Spirit Lamp</a>
+						<p class="card-text">360.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">102 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Pure Noir</a>
+						<p class="card-text">300.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">67 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Ocean Storm</a>
+						<p class="card-text">360.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">50 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Cabin Fever</a>
+						<p class="card-text">300.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">88 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Spirit Lamp</a>
+						<p class="card-text">360.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">60 Reviews</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-6 col-xl-3">
+				<div class="card">
+					<a href="product.html"><img src="./images/bs-product1.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<a class="card-name" href="product.html">Pure Noir</a>
+						<p class="card-text">300.000 VNĐ</p>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<a href="#" class="card-link text-decoration-none">32 Reviews</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bs-button-container">
+			<a href="bestsellers.html" class="bs-btn bs-btn1">Shop All Best-Sellers</a>
+		</div>
+</div>
+		<!--Bestsellers-->
+
+		<!--CTA - New Collection-->
+	<div class="cta-banner">
+		<img src="./images/collection-banner.png" class="w-100 d-sm-block">
+		<section id="cta-text">
+			<h4>New Collection: Joyful + Confident</h4>
+			<p>
+				A fresh fruity and juicy sun ripened raspberry accord with vanillic undertones. A range of professional grade 
+				extra strong fragrances perfect for all home fragrancing including candles, wax melts, reed diffusers and more.
+			</p>
+			<a href="">
+				<button type="button" class="btn btn-outline-dark search-button">SHOP NOW</button>
+			</a>
+		</section>
+	</div>
+		<!--CTA - New Collection-->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+	<!--Section: Subscribe Email-->
+	<section id="sub-email" class="border-bottom p-4">
+		<div class="row d-flex justify-content-center">
+			<span style="font-weight: 600" class="p-2 col-auto my-auto">Subscribe to our newsletter:</span>
+			<form class="col-auto" role="form">
+				<div class="input-group flex-nowrap">
+					<input type="text" class="form-control mx-4" placeholder="Email Address" aria-label="Username" aria-describedby="addon-wrapping">
+					<button class="btn btn-outline-dark search-button">Subscribe</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!--Section: Subscribe Email-->
+		
+	<!-- Section: Social media -->
+	<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<div class="me-5 d-none d-lg-block">
+			<span>Get connected with us on social networks:</span>
+		</div>
+
+		<div>
+			<a href="" class="me-4 text-reset">
+				<i class="bi bi-facebook"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="bi bi-instagram"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+					<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+				</svg>
+			</a>
+		</div>
+	</section>
+	<!-- Section: Social media -->
+			
+	<!-- Section: Links  -->
+	<section>
+		<div class="container text-center text-md-start mt-5">
+			<!-- Grid row -->
+			<div class="row mt-3">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+					<!-- Content -->
+					<h6 class="fw-bold mb-4">
+						<img id="logo" src="./images/candle-svgrepo-com.svg"/>Candleio
+					</h6>
+					<p style="font-weight: 400; font-size: 12px;">
+						This project is only for educational purposes. All the images, contents and graphics used in the 
+						project belong to their respective owners and I do not claim any right over them. Thank you!
+					</p>
+				</div>
+				<!-- Grid column -->
+	
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">Products</h6>
+					<p><a href="floral.html" class="footer-link">Floral</a></p>
+					<p><a href="woody.html" class="footer-link">Woody</a></p>
+					<p><a href="fresh.html" class="footer-link">Fresh</a></p>
+					<p><a href="oriental.html" class="footer-link">Oriental</a></p>
+				</div>
+				<!-- Grid column -->
+	
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+				<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">Helps</h6>
+					<p><a href="about-us.html" class="footer-link">About Us</a></p>
+					<p><a href="#!" class="footer-link">Shipping & Returns</a></p>
+					<p><a href="#!" class="footer-link">Privacy Policy</a></p>
+					<p><a href="sitemap.html" class="footer-link">Sitemap</a></p>
+				</div>
+				<!-- Grid column -->
+		
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+				<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+					<p><i class="bi bi-house-door"></i> Ha Noi, Vietnam</p>
+					<p><i class="bi bi-envelope"></i> info@example.com</p>
+					<p><i class="bi bi-telephone"></i> + 01 234 567 89</p>
+				</div>
+				<!-- Grid column -->
+			</div>
+		</div>
+	</section>
+	<!-- Section: Links  -->
+			
+	<!-- Copyright -->
+		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+			© 2022 by nghiaxlee_
+		</div>
+	<!-- Copyright -->
+</footer>
+		<!-- Footer -->
+
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

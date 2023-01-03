@@ -1,0 +1,577 @@
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+nav {
+    padding: 20px;
+    background-color: white;
+}
+
+input {
+    border-radius: 0 !important;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: black !important;
+    box-shadow: 0 0 0.5rem rgb(180, 180, 180) !important;
+}
+
+button:focus {
+    outline: none !important;
+    border-color: none !important;
+    box-shadow: 0 0 0.25rem gray !important;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-control-next:focus, .carousel-control-prev:focus {
+    box-shadow: none !important;
+    text-shadow: none;
+}
+
+.dropdown-active {
+    color: white !important;
+    background-color: #473028;
+
+}
+
+.dropdown-active:active, .dropdown-active:hover, .dropdown-active:focus {
+    background-color: #473028;
+    color: white;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: gray;
+    transition: 0.25s ease;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin: 10px 20px 10px 20px;
+    vertical-align: middle;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.85em;
+}
+
+#nav-icon {
+    color: #495057;
+}
+
+.search-button {
+    border: 1px solid #473028;
+    color: #473028;
+}
+
+.search-button:hover {
+    background-color: #473028;
+    border: 1px solid #473028;
+}
+
+
+#nav-checkout {
+    margin: 20px auto 20px auto;
+}
+
+#nav-checkout button:hover {
+    background-color: #473028;
+}
+
+@media (max-width: 992px) {
+    .nav-item, #signup{
+        text-align: center;
+        margin: auto;
+    }
+    .navbar-brand {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown-item {
+        text-align: center;
+    }
+
+    #nav-icon {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+h1.tagline {
+    font-weight: 700;
+}
+
+#story-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#our-story h1 {
+    margin-bottom: 30px;
+}
+ 
+#our-story p{
+    width: 520px;
+    margin: 0 auto;
+}
+
+#our-story button {
+    padding: 10px 60px; 
+    margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+    #our-story p{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+#intro-pic {
+    padding: 0;
+}
+
+#intro-text {
+    padding: 100px;
+    display: table;
+}
+
+#intro-text div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#intro-text h1, #intro-text p {
+    margin-bottom: 30px;
+}
+
+#intro-text a {
+    color: #473028;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+}
+
+#intro-text a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out
+}
+
+#intro-text a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+@media (max-width: 992px) {
+    #intro-text {
+        padding: 40px;
+    }
+
+    #intro-text div {
+        text-align: center;
+    }
+
+    #intro-text h1, #intro-text p {
+        margin-bottom: 15px;
+    }
+}
+
+#product-section {
+    margin-top: 100px;
+    margin-bottom: 85px;
+}
+
+#home-titles {
+	padding: 10px 50px;
+}
+
+#product-title h3 {
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+    #product-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #home-titles {
+        padding: 5px 25px;
+    }
+
+    #product-title {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #product-title h3 {
+        font-size: 75%;
+    }
+}
+
+#product-title {
+    margin-bottom: 3vw;
+}
+
+.card {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.card, .card-img-top {
+    border-radius: 0;
+    text-align: left;
+    transition: opacity 2s ease;
+}
+
+.card-img-top:hover {
+    content: url("../images/bs-product2.jpg");
+}
+
+.card-name {
+    font-size: 20px;
+    text-decoration: none;
+    color: #473028;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-name:hover {
+    color: #473028;
+}
+
+.card-text {
+    margin-top: 1rem;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.card-link {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#bs-button-container {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.bs-btn {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.bs-btn::before {
+    background: #473028;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.bs-btn:hover {
+    color: white;
+}
+
+.bs-btn1::before {
+    width: 0%;
+    height: 100%;
+  }
+  
+.bs-btn1:hover::before {
+    width: 100%;
+}
+
+
+.cta-banner {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#cta-text {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 55% 20px 50px;
+}
+
+#cta-text h4, #cta-text p, #cta-text a {
+    margin-bottom: 30px;
+}
+
+#cta-text h4 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#cta-text p {
+    font-weight: 200;
+}
+
+@media (max-width: 992px) {
+    #cta-text {
+        padding: 30px;
+        text-align: center;
+    }
+
+    #cta-text h4, #cta-text p, #cta-text a {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .cta-banner img{
+        display: block;
+    }
+    
+    #cta-text {
+        padding: 30px;
+        text-align: center;
+        display: block;
+        position: initial;
+        transform: none;
+    }
+
+    #cta-text h4, #cta-text p, #cta-text a {
+        margin-bottom: 15px;
+    }
+
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-link:hover {
+    color: #473028;
+}
+
+#sub-email div {
+    vertical-align: middle;
+}
+
+
+/*SIGN UP - LOG IN PAGE*/
+#account-box {
+    width: 50%;
+    padding: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+    #account-box {
+        width: 85%;
+        padding: 4vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#account-box h4 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#account-box label {
+    color: gray;
+}
+
+.account-btn {
+    padding: 10px 70px;
+}
+
+#forgot-psw a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+
+#forgot-psw a:hover{
+    color: black;
+}
+
+#sign-up {
+    text-decoration: none;
+    color: #473028;
+    font-weight: 700;
+}
+
+#sign-up:hover {
+    text-decoration: underline;
+    text-decoration-color: #473028;
+    -moz-text-decoration-color: #473028;
+    text-decoration-thickness: 2px;
+}
+/*SIGN UP - LOG IN PAGE*/
+
+
+/*CATEGORY - BESTSELLER PAGES*/
+#category {
+    padding: 10px 62px;
+    margin-bottom: 5vw;
+}
+
+@media (max-width: 992px) {
+    #category {
+        padding: 10px;
+        margin-bottom: 2vw;
+    }
+}
+
+.category-box {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.category-box a {
+    text-decoration: none;
+}
+
+.category-box img:hover ~ .category-text  {
+    text-decoration: none; 
+    background-color: #473028; 
+    color:white;
+}
+
+.category-text {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+
+.category-text:hover {
+    text-decoration: none; 
+    background-color: #473028; 
+    color:white;
+}
+/*CATEGORY - BESTSELLER PAGES*/
+
+
+/*SITEMAP PAGE*/
+
+#sitemap-box {
+    text-align: left;
+}
+
+/*SITEMAP PAGE*/
+
+/*CHECKOUT PAGE*/
+
+#checkout-box {
+    text-align: left;
+}
+
+.checkout-p-img {
+    width: 50%;
+    height: auto;
+}
+
+.plus-minus {
+    position: relative
+}
+
+.qty-click button.qty-btn {
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+    height: 25px;
+    padding: 0;
+    text-align: center;
+    width: 25px;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+/*CHECKOUT PAGE*/
+
+/*PRODUCT PAGE*/
+
+#product-details {
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#product-name h4 {
+    font-size: 250%;
+    font-weight: bold;
+    color: #473028;
+    text-transform: uppercase;
+}
+
+#recommendations {
+    margin-top: 8vw;
+}
+
+#rcm-titles h3 {
+    font-size: 150%;
+}
+
+@media (max-width: 992px) {
+    #product-details {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    #product-img {
+        padding: 0;
+    }
+
+    #rcm-titles h3 {
+        font-size: 100%;
+    }
+
+}
+/*PRODUCT PAGE*/
